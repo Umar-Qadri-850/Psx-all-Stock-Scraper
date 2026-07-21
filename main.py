@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 """
 ============================================================================
  PSX (Pakistan Stock Exchange) Real-Time Scraper + Data Dictionary Mapper
@@ -14,24 +14,24 @@ which columns were populated vs which are NOT obtainable from public
 pages (and why, per your own dictionary's "Access Method" notes).
 
 USAGE
-  python3 main.py PSO                      # one company, full detail
-  python3 main.py PSO APL WAFI HTL HASCOL  # a specific list, full detail
-  python3 main.py --symbols-file list.txt  # a list from a file
-  python3 main.py --all                    # EVERY listed company, fast
+  python main.py PSO                      # one company, full detail
+  python main.py PSO APL WAFI HTL HASCOL  # a specific list, full detail
+  python main.py --symbols-file list.txt  # a list from a file
+  python main.py --all                    # EVERY listed company, fast
                                             #   (1 request, price/volume only)
-  python3 main.py --all --detailed         # EVERY listed company, full
+  python main.py --all --detailed         # EVERY listed company, full
                                             #   detail (500+ requests, slow)
-  python3 main.py --all --limit 20         # test on the first 20 first
+  python main.py --all --limit 20         # test on the first 20 first
 
   Extra modules (each adds more per-company requests - only meaningful
   together with --detailed or an explicit symbol list):
-  python3 main.py PSO --ratios             # normalized ratio table
-  python3 main.py PSO --payouts            # dividend / bonus / rights history
-  python3 main.py PSO --reports            # annual/quarterly report PDF links
-  python3 main.py PSO --announcements      # PSX notices / corporate announcements
-  python3 main.py PSO --financial-pdfs     # full financial statement PDF links
-  python3 main.py PSO --corporate-actions  # splits / bonus / rights / mergers
-  python3 main.py PSO --extras             # turns ALL of the above on at once
+  python main.py PSO --ratios             # normalized ratio table
+  python main.py PSO --payouts            # dividend / bonus / rights history
+  python main.py PSO --reports            # annual/quarterly report PDF links
+  python main.py PSO --announcements      # PSX notices / corporate announcements
+  python main.py PSO --financial-pdfs     # full financial statement PDF links
+  python main.py PSO --corporate-actions  # splits / bonus / rights / mergers
+  python main.py PSO --extras             # turns ALL of the above on at once
 
 ------------------------------------------------------------------------
 LEGAL / ToS NOTICE - READ THIS
